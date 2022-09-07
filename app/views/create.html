@@ -9,14 +9,14 @@
 </head>
 <body>
     <nav class="navbar navbar-dark bg-dark">
-        <a class="navbar-brand">CRUD</a>
+        <a class="navbar-brand">CREATE</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="create.html">Create</a>
+            <li class="nav-item active">
+              <a class="nav-link" href="create.html">Create<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="read.html">Read</a>
@@ -33,4 +33,21 @@
           </ul>
         </div>
       </nav>
+      <div class="content">
+        <div class="card">
+          <div class="card-body">
+            <form method="POST">
+              <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" class="form-control" name="username" placeholder="Username">
+              </div>
+              <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" name="password" placeholder="Password">
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
 </body>

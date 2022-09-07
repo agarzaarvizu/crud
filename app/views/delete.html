@@ -9,7 +9,7 @@
 </head>
 <body>
     <nav class="navbar navbar-dark bg-dark">
-        <a class="navbar-brand">CRUD</a>
+        <a class="navbar-brand">DELETE</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -24,8 +24,8 @@
             <li class="nav-item">
               <a class="nav-link" href="update.html">Update</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="delete.html">Delete</a>
+            <li class="nav-item active">
+              <a class="nav-link" href="delete.html">Delete<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="/logout">Logout <img id="logout" src="static/img/logout.png" /></a>
@@ -33,4 +33,20 @@
           </ul>
         </div>
       </nav>
+      <div class="content">
+        <div class="card">
+          <div class="card-body">
+            <table>
+              <tr>
+                <th>ID</th>
+                <th>Username</th>
+                <th>Password</th>
+              </tr>
+              <form method="POST">
+                {{ data|safe }}
+              </form>
+            </table>
+          </div>
+        </div>
+      </div>
 </body>

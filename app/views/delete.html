@@ -24,10 +24,26 @@
             <li class="nav-item">
               <a class="nav-link" href="update.html">Update</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="delete.html">Delete</a>
+            <li class="nav-item active">
+              <a class="nav-link" href="delete.html">Delete<span class="sr-only">(current)</span></a>
             </li>
           </ul>
         </div>
       </nav>
+      <div class="content">
+        <div class="card">
+          <div class="card-body">
+            <table>
+              <tr>
+                <th>ID</th>
+                <th>Username</th>
+                <th>Password</th>
+              </tr>
+              <form method="POST">
+                {{ data|safe }}
+              </form>
+            </table>
+          </div>
+        </div>
+      </div>
 </body>
